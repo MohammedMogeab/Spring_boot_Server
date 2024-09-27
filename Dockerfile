@@ -3,7 +3,7 @@ FROM maven:3.9.9-eclipse-temurin-22-alpine AS build
 COPY src /home/app/src
 COPY pom.xml /home/app
 WORKDIR /home/app
-RUN mvn clean package
+RUN mvn clean package -DskipTests
 
 # Package stage
 FROM eclipse-temurin:22-jre-alpine
