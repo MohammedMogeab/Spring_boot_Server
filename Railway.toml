@@ -1,0 +1,4 @@
+[build]
+builder = "maven"
+build_command = "./mvnw clean install"
+start_command = "java -jar target/Apps-0.0.1-SNAPSHOT.jar"
